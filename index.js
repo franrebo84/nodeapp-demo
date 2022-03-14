@@ -25,7 +25,7 @@ cowsay.list(get_cows);
 
 app.get("/", function (req, res) {
   let text;
-  text = "Hi Awesome People!";
+  text = "Automate, automate, Automate";
   const responseText = `
   <html> 
   <head>
@@ -59,7 +59,7 @@ app.get("/", function (req, res) {
     <div id="container">
      <div id="content">
    ${cowsay.say( { text: text ,
-                f: 'ghostbusters' })}
+                f: 'tux' })}
     </body>
      </div>
     </div>
@@ -69,4 +69,7 @@ app.get("/", function (req, res) {
   res.send(responseText);
 });
 
-app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
+	   //app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
+app.listen(3001, 'localhost', function() {
+  console.log("... port %d in %s mode", app.address().port, app.settings.env);
+});
