@@ -19,7 +19,6 @@ function get_cows(error, cow_names) {
         console.log(`Number of cows available: ${cow_names.length}`);
     }
 }
-cowsay.list(get_cows);
 
 
 
@@ -69,7 +68,7 @@ app.get("/", function (req, res) {
   res.send(responseText);
 });
 
-	   //app.listen(PORT, () => console.log(`Running on http://localhost:${PORT}`));
-app.listen(3001, 'localhost', function() {
-  console.log("... port %d in %s mode", app.address().port, app.settings.env);
+
+ app.listen(PORT,'127.0.0.1',()=>{
+      console.log(`server is listening on ${PORT} port`);
 });
