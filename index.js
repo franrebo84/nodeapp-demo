@@ -24,7 +24,7 @@ function get_cows(error, cow_names) {
 
 app.get("/", function (req, res) {
   let text;
-  text = "Automate, automate, Automate";
+  text = "River Plate tu grato nombre";
   const responseText = `
   <html> 
   <head>
@@ -58,7 +58,7 @@ app.get("/", function (req, res) {
     <div id="container">
      <div id="content">
    ${cowsay.say( { text: text ,
-                f: 'tux' })}
+                f: 'ghostbusters' })}
     </body>
      </div>
     </div>
