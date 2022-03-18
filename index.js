@@ -58,7 +58,7 @@ app.get("/", function (req, res) {
     <div id="container">
      <div id="content">
    ${cowsay.say( { text: text ,
-                f: 'ghostbusters' })}
+                f: 'dragon' })}
     </body>
      </div>
     </div>
